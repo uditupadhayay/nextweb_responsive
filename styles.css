@@ -48,3 +48,192 @@ table {
 }
 
 /*Styling Starts here*/
+
+/*Remove Later*/
+body
+{
+	background-color: black;
+}
+.container-fluid
+{
+	width: 100%;
+	display: block;
+	position: relative;
+/*Remove this later start
+	This part is just for checking the layout is behaving as expected
+	before populating the content */
+	height: 100vh;
+	overflow: visible;
+	background-color: black;
+/*Remove this later end*/
+}
+
+.navigation
+{
+	position: fixed; /*Fix later to enable the hiding of part of header nav on scroll*/
+	width: 100%;   /*Fix later based on change in position */
+}
+
+.site-nav
+{
+		background-color: green; /*Need to remove later */
+		height: 32px; /*this does not changes on window height change*/
+}
+
+.news-cat-nav
+{
+	background-color: white;/*Need to remove later */
+	height: 48px; /*this does not changes on window height change*/
+}
+
+main
+{
+	background-color: red; /*remove later*/
+	height: 85%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.main-col1, .main-col2
+{
+	padding: 4px;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.main-col2
+{
+	float: right;
+	width: 34%;
+	background-color: orange; /*Remove later*/
+}
+
+.main-col1
+{
+	float: left;
+	width: 66%;
+	background-color: yellow; /*Remove later */
+}
+
+/*fixed width till viewport min-width: ??? */
+/*.single-latest-news and .single-latest-funding have same styling till
+Screen size : ???? */
+.single-latest-news, .single-latest-funding, .single-latest-deal
+{
+	display: inline-block;
+	width: 306px;
+	padding: 12px;
+	box-sizing: border-box;
+	background-color: blue; /*Remove later */
+	margin-left: 2px; /*Remove later. To see layout behaving as expected*/
+}
+
+/*.latest-news and .latest-funding have same styling till
+Screen size : ???? */
+.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+{
+	text-align: center;
+	background-color: purple; /*Remove Later */
+}
+
+.tnw-conference
+{
+	padding: 35px 0;
+	background-color: red;
+	height: 151px; /*Till window width ???*/
+}
+
+/*remove this later*/
+.latest-funding, .news-categories, .latest-deals
+{
+	margin-top: 20px;
+	background-color: purple;
+}
+
+/*fixed width till screen size : ??? */
+.news-categories-col
+{
+	display: inline-block;
+	width: 408px;
+	padding: 12px;
+	box-sizing: border-box;
+	background-color: blue; /*Remove Later*/
+	margin-left: 2px; /*Remove later. To see layout behaving as expected*/
+}
+
+
+.tnw-conf-header
+{
+	width: 433px; /*Fixed width till window width  ?? */
+	height: 25px; /*For all screen size */
+	background-color: yellow;/*remove later*/
+}
+
+.conf-rem-time
+{
+	width: 608px; /*Fixed width till window width  ?? */
+	display: inline-block;
+	height: 151px;
+	padding: 0 42px;
+	background-color: orange;/*remove later*/
+	z-index: 99;
+}
+
+.conf-more
+{
+	width: 433px; /*Fixed width till window width  ?? */
+	height: 126px; /*fixed till screen width ???*/
+	background-color: blue; /*remove later*/
+}
+
+/*For centering the conference content in footer*/
+.footer-wrapper
+{
+	padding: 0 20px;
+	text-align: center;
+}
+
+.col
+{
+	display: inline-block;
+}
+
+/*Footer navigation Styling */
+.footer-aside-nav
+{
+	width: 1152px; /*Till screen width ??? */
+	padding: 35px 0;
+	text-align: left;
+	display: inline-block;
+	height: 180px; /*Till the screen width ???*/
+}
+
+.footer-aside-nav-col
+{
+	width: 33%;
+	height: 100%;
+	display: inline-block;
+	background-color: purple;
+
+}
+.footer-copyright
+{
+/*No change based on the screen size*/
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	background-color: black;
+/*Changed on the basis of screen size*/
+	padding: 39px 0;
+	height: 19px;
+}
+
+.footer-share-links
+{
+/*No change based on the screen size*/
+	text-align: center;
+	background-color: yellow;
+	font-size: 13px;
+	height: 91px;
+	background-color: pink; /*remove this later*/
+}

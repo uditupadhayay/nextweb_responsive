@@ -1,0 +1,45 @@
+<h1> The Next Web </h1> <!-- for HTML Outliner -->
+<header>
+  <h2> Navigation </h2><!-- for HTML Outliner -->
+  <nav class = "site-nav">
+    <h3> Site Navigation</h3> <!-- for HTML Outliner -->
+    <ul>
+      <li> <a href="#" class="nav-text-link">News</a> </li>
+      <li> <a href="#" class="nav-text-link">Conference</a> </li>
+      <li> <a href="#" class="nav-text-link">Engine</a> </li>
+      <li> <a href="#" class="nav-text-link">TQ</a> </li>
+      <li> <a href="#" class="nav-text-link">Deals</a> </li>
+      <li> <a href="#" class="nav-text-link">Answers</a> </li>
+      <li> <a href="#" class="nav-text-link">Tech 5</a> </li>
+      <li> <a href="#" class="right-float nav-text-link">Contacts</a> </li>
+      <li> <a href="#" class="right-float nav-text-link">Jobs</a> </li>
+      <li> <a href="#" class="right-float nav-text-link">Contribute</a> </li>
+      <li> <a href="#" class="right-float nav-text-link">Advertise</a> </li>
+      <li> <a href="#" class="right-float nav-text-link">Team</a> </li>
+      <li> <a href="#" class="right-float nav-text-link">About</a> </li>
+    </ul>
+  </nav>
+
+  <nav class="news-cat">
+    <h3>News Category</h3> <!-- for HTML Outliner -->
+    <ul>
+      <li><a href="#" class="nav-text-link">Apps</a></li>
+      <li><a href="#" class="nav-text-link">Gear</a></li>
+      <li><a href="#" class="nav-text-link">Tech</a></li>
+      <li><a href="#" class="nav-text-link">Creativity</a></li>
+      <li><a href="#" class="nav-text-link">Money</a></li>
+      <li><a href="#" class="nav-text-link">Insights</a></li>
+      <li><a href="#" class="nav-text-link">Launch</a></li>
+      <li><a href="#" class="nav-text-link">World</a></li>
+      <li><a href="#" class="nav-text-link">Distract</a></li>
+      <li><a href="#" class="nav-text-link">Offers</a></li>
+      <!-- nav-img-link: navigation links with background image
+           nav-search .. nav-facebook: to give distinct background images -->
+      <li><a href="#" class="right-float nav-img-link nav-search"> </a></li>
+      <li><a href="#" class="right-float nav-img-link nav-more"> </a></li>
+      <li><a href="#" class="right-float nav-img-link nav-mail"> </a></li>
+      <li><a href="#" class="right-float nav-img-link nav-twitter"> </a></li>
+      <li><a href="#" class="right-float nav-img-link nav-facebook"> </a></li>
+    </ul>
+  </nav>
+</header>
