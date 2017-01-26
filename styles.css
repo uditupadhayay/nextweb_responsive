@@ -59,181 +59,355 @@ body
 	width: 100%;
 	display: block;
 	position: relative;
-/*Remove this later start
-	This part is just for checking the layout is behaving as expected
-	before populating the content */
 	height: 100vh;
-	overflow: visible;
-	background-color: black;
-/*Remove this later end*/
 }
 
 .navigation
 {
 	position: fixed; /*Fix later to enable the hiding of part of header nav on scroll*/
-	width: 100%;   /*Fix later based on change in position */
+	top: 0;
+	z-index: 99;
+	width: 100%;
 }
 
 .site-nav
 {
 		background-color: green; /*Need to remove later */
-		height: 32px; /*this does not changes on window height change*/
+		height: 32px;
 }
 
 .news-cat-nav
 {
 	background-color: white;/*Need to remove later */
-	height: 48px; /*this does not changes on window height change*/
+	height: 48px;
 }
 
 main
 {
 	background-color: red; /*remove later*/
-	height: 85%;
 	box-sizing: border-box;
-	overflow: hidden;
+	margin-bottom: 100px;
+	/*Responsive element*/
+	height: 85vh; /* 60vh (1024 to 768) 95vh(below 768)*/
+	padding-top: 85px;
 }
 
 .main-col1, .main-col2
 {
 	padding: 4px;
 	box-sizing: border-box;
+	/*Responsive element*/
 	height: 100%;
+	display: inline-block;
 }
 
 .main-col2
 {
-	float: right;
-	width: 34%;
+	/*responsive element*/
+	width: 33.3%;
 	background-color: orange; /*Remove later*/
 }
 
 .main-col1
 {
-	float: left;
+	/*Responsive element*/
 	width: 66%;
 	background-color: yellow; /*Remove later */
 }
 
-/*fixed width till viewport min-width: ??? */
-/*.single-latest-news and .single-latest-funding have same styling till
-Screen size : ???? */
 .single-latest-news, .single-latest-funding, .single-latest-deal
 {
-	display: inline-block;
-	width: 306px;
-	padding: 12px;
 	box-sizing: border-box;
 	background-color: blue; /*Remove later */
-	margin-left: 2px; /*Remove later. To see layout behaving as expected*/
+	/*Responsive element*/
+	display: inline-block;
+	width: 288px;
+	padding: 10px;
 }
 
 /*.latest-news and .latest-funding have same styling till
 Screen size : ???? */
 .latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
 {
-	text-align: center;
+	margin: 0 auto;
 	background-color: purple; /*Remove Later */
+	/*responsive element*/
+	widows: 1152px;
 }
 
 .tnw-conference
 {
 	padding: 35px 0;
-	background-color: red;
-	height: 151px; /*Till window width ???*/
+	background-color: red; /*Remove later*/
 }
 
 /*remove this later*/
 .latest-funding, .news-categories, .latest-deals
 {
 	margin-top: 20px;
-	background-color: purple;
+	background-color: purple; /*Remove later*/
 }
 
-/*fixed width till screen size : ??? */
 .news-categories-col
 {
-	display: inline-block;
-	width: 408px;
-	padding: 12px;
 	box-sizing: border-box;
+	width: 382px;
 	background-color: blue; /*Remove Later*/
-	margin-left: 2px; /*Remove later. To see layout behaving as expected*/
+	/*Responsive elements*/
+	display: inline-block;
+	margin: 0;
+	padding: 12px;
 }
 
 
 .tnw-conf-header
 {
-	width: 433px; /*Fixed width till window width  ?? */
-	height: 25px; /*For all screen size */
+	height: 25px;
 	background-color: yellow;/*remove later*/
+	/*responsive element*/
+	width: 433px;
 }
 
 .conf-rem-time
 {
-	width: 608px; /*Fixed width till window width  ?? */
-	display: inline-block;
-	height: 151px;
-	padding: 0 42px;
+	box-sizing: border-box;
 	background-color: orange;/*remove later*/
-	z-index: 99;
+	/*Responsive element*/
+	width: 692px;
+	padding: 0 42px;
+	height: 151px;
+}
+
+.time-header
+{
+	display: inline-block;
+	/*Responsive element*/
+	width: 151px;
+	height: 21px;
+	background-color: green;/*remove later*/
+}
+
+.time-value
+{
+	display: inline-block;
+	/*Responsive element*/
+	width: 151px;
+	height: 93px;
+	background-color: pink; /*remove later*/
 }
 
 .conf-more
 {
-	width: 433px; /*Fixed width till window width  ?? */
-	height: 126px; /*fixed till screen width ???*/
-	background-color: blue; /*remove later*/
+	/*Responsive element*/
+	width: 433px;
+	height: 126px;
+	background-color: blue;
 }
 
-/*For centering the conference content in footer*/
-.footer-wrapper
+.conf-header
+{
+	display: inline-block;
+	/*Responsive element*/
+	width: 151px;
+}
+
+.footer-wrapper, .wrapper
 {
 	padding: 0 20px;
 	text-align: center;
 }
 
-.col
+.time-wrapper
 {
 	display: inline-block;
+	vertical-align: top;
 }
 
-/*Footer navigation Styling */
 .footer-aside-nav
 {
-	width: 1152px; /*Till screen width ??? */
 	padding: 35px 0;
 	text-align: left;
 	display: inline-block;
-	height: 180px; /*Till the screen width ???*/
+	/*Responsive elements*/
+	width: 1152px;
+	height: 180px;
 }
 
 .footer-aside-nav-col
 {
+	/*Responsive element*/
 	width: 33%;
 	height: 100%;
 	display: inline-block;
-	background-color: purple;
+	background-color: purple; /*Reomove later*/
 
 }
 .footer-copyright
 {
-/*No change based on the screen size*/
 	text-align: center;
 	color: #fff;
 	font-size: 13px;
 	background-color: black;
-/*Changed on the basis of screen size*/
+	/*responsive element*/
 	padding: 39px 0;
 	height: 19px;
 }
 
 .footer-share-links
 {
-/*No change based on the screen size*/
 	text-align: center;
 	background-color: yellow;
 	font-size: 13px;
 	height: 91px;
 	background-color: pink; /*remove this later*/
+}
+
+/*Media Queries to handle the responsive design*/
+@media screen and (max-width: 1206px)
+{
+	.tnw-conf-header, .conf-more
+	{
+		width: 39vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 54vw;
+		 padding: 0;
+	 }
+
+	 .time-header, .time-value{
+		 width: 25%;
+	 }
+
+	 .footer-aside-nav
+	 {
+		 width: 100%;
+	 }
+
+	 .footer-aside-nav-col
+	 {
+		 width: 32.9%;
+	 }
+}
+
+@media screen and (max-width: 1206px) and (min-width: 1024px)
+{
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		width: 25%;
+	}
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	{
+		width: 100%;
+		text-align: left;
+	}
+	.news-categories-col
+	{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+	main
+	{
+		height: 60%;
+	}
+
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		padding: 10px;
+		width: 33.33%;
+	}
+
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	{
+		width: 100%;
+		text-align: left;
+	}
+	.news-categories-col
+	{
+		width: 49.5%;
+		padding: 10px;
+	}
+
+	.tnw-conf-header, .conf-more
+	{
+		width: 38vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 53vw;
+		 padding: 0;
+	 }
+
+}
+
+@media screen and (max-width: 767px){
+	main
+	{
+		height: 95vh;
+	}
+
+	.main-col1, .main-col2
+	{
+		display: block;
+		width: 100%;
+	}
+
+	.main-col1
+	{
+		height: 33%;
+	}
+
+	.main-col2 article
+	{
+		height: 33%;
+	}
+
+	.single-latest-news
+	{
+		width: 33%;
+	}
+
+	.latest-news{
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		padding: 0 0 0 88px;
+		width: 100%;
+		display: block;
+		height: 72px;
+		border-bottom: 1px solid black;
+	}
+
+	/*overwritting the padding and height for the latest funding thing*/
+	.single-latest-funding,
+	{
+		padding: 8px;
+		height: 225px;
+	}
+
+	.news-categories-col
+	{
+		width: 100%;
+		padding: 8px;
+	}
+
+	.footer-aside-nav-col
+	{
+		width: 49.3%;
+	}
+
+	.tnw-conf-header, .conf-more
+	{
+		width: 100vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 100vw;
+		 padding: 0;
+	 }
 }
