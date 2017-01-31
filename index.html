@@ -4,7 +4,10 @@
     <title> The Next Web | International technology News</title>
     <meta name="viewport" content="width:device-width, initial-scale:1" />
     <meta charset="utf-8"/>
-    <link href="styles.css" rel="stylesheet" type = "text/css" />
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type = "text/css" />
+    <script src="js/jquery-3.1.1.min.js"> </script>
+    <script src="js/script.js"> </script>
   </head>
 
   <body>
@@ -12,21 +15,163 @@
     <div class = "container-fluid">
       <header class="navigation">
         <nav class = "site-nav">
+          <ul class = "inl-block-menu">
+            <li> <a href="#">News</a> </li>
+            <li> <a href="#">Conference</a> </li>
+            <li> <a href="#">Engine</a> </li>
+            <li> <a href="#">TQ</a> </li>
+            <li> <a href="#">Deals</a> </li>
+            <li> <a href="#">Answers</a> </li>
+            <li> <a href="#">Tech 5</a> </li>
+            <div class="r-float">
+              <li class="hide-item-895"> <a href="#">Contacts</a> </li>
+              <li class="hide-item-815"> <a href="#">Jobs</a> </li>
+              <li> <a href="#">Contribute</a> </li>
+              <li> <a href="#">Advertise</a> </li>
+              <li> <a href="#">Team</a> </li>
+              <li> <a href="#">About</a> </li>
+            </div>
+          </ul>
         </nav> <!-- site-nav -->
 
         <nav class="news-cat-nav">
-        </nav> <!-- news-cat -->
+          <div  class = "header-tnw-logo" >
+            <img src = "img/tnw.svg" width ="66px" height="48px" atl="tnw-logo"/>
+          </div>
+          <ul class = "inl-block-menu">
+            <div class="hide-item-769">
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Gear</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Creativity</a></li>
+              <li class="hide-item-895" ><a href="#">Money</a></li>
+              <li class="hide-item-895"><a href="#">Insights</a></li>
+              <li class="hide-menu-item"><a href="#">Launch</a></li>
+              <li class="hide-menu-item"><a href="#">World</a></li>
+              <li class="hide-menu-item"><a href="#">Distract</a></li>
+              <li><a href="#">Offers</a></li>
+              <li class="nav-more show-more-button"><a href="#"></a></li>
+            </div>
+            <!-- nav-search .. nav-facebook: to give distinct background images -->
+            <div class="r-float">
+              <div class="hide-item-769">
+                <li class="nav-facebook"><a href="#" ></a></li>
+                <li class="nav-twitter"><a href="#" ></a></li>
+                <li  class="nav-mail"><a href="#"></a></li>
+                <li  class="nav-more"><a href="#"></a></li>
+              </div>
+              <li class="nav-search"> </li> <!--nav-search -->
+              <li id="alternate-menu-but">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+              </li> <!--alternate-menu -->
+            </div>
+          </ul>
+        </nav> <!-- news-cat-nav -->
+
+        <nav id="alt-menu" class="no-display container-fluid">
+          <div class="alt-menu-row">
+            <span class="r-float" id="close-alt-menu">X</span>
+          </div> <!-- alt-menu-row -->
+
+          <div class="alt-menu-row">
+            <ul class="share-icon">
+              <li><a href="#" class="mail-icon-menu"></a></li>
+              <li><a href="#" class="face-icon-menu"></a></li>
+              <li><a href="#" class="twit-icon-menu"></a></li>
+              <li><a href="#" class="goog-icon-menu"></a></li>
+              <li><a href="#" class="link-icon-menu"></a></li>
+              <li><a href="#" class="yout-icon-menu"></a></li>
+              <li><a href="#" class="pint-icon-menu"></a></li>
+              <li><a href="#" class="inst-icon-menu"></a></li>
+              <li><a href="#" class="wifi-icon-menu"></a></li>
+            </ul> <!-- share-icon -->
+          </div> <!-- alt-menu-row -->
+
+          <div class="alt-menu-row">
+            <ul class="col-50">
+              <li class="alt-menu-col-head">Sections</li> <!--alt-menu-col-head -->
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Gear</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Creative</a></li>
+              <li><a href="#">Money</a></li>
+              <li><a href="#">Insights</a></li>
+              <li><a href="#">Launch</a></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">Distract</a></li>
+              <li><a href="#">Offers</a></li>
+            </ul><!--col-5- -->
+            <ul class="col-50">
+              <li class="alt-menu-col-head">About TNW</li> <!--alt-menu-col-head -->
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Advertise0</a></li>
+              <li><a href="#">Contrubute</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="alt-menu-col-head">TNW Sites</li> <!--alt-menu-col-head -->
+              <li><a href="#">News</a></li>
+              <li><a href="#">Conference</a></li>
+              <li><a href="#">TNW NYC</a></li>
+              <li><a href="#">Index</a></li>
+              <li><a href="#">TQ</a></li>
+              <li><a href="#">TQ</a></li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Cyberspace culture</a></li>
+            </ul>
+          </div> <!-- alt-menu-row -->
+        </nav> <!-- alt-menu -->
       </header>
 
       <main>
         <div class="main-col1">
-          <article>
-          </article>
+          <article id="main-article-1">
+            <div class="date-time">
+              <div class="article-tnw-logo"> </div> <!-- article-tnw-logo -->
+              <time datetime="2017-01-31"> Tuesday - January 31, 2017</time>
+            </div> <!-- date-time -->
+            <div class ="main-article-content">
+              <div class="article-cat">
+                <span> insights</span>
+              </div><!-- article-cat -->
+              <h2> Twitter's abuse problem can not be fixed till we fix ourselves</h2>
+              <div class="article-add-details">
+                <span> by <span class="author">Abhimanyu Ghoshal </span> </span>
+                <span clas="article-time">2 Hours ago</span>
+                <span class="article-share">247 /span>
+              </div> <!-- article-add-details -->
+            </div><!-- article-main-content -->
+          </article> <!-- main-article-1 -->
         </div> <!-- main-col1 -->
         <div class="main-col2">
-          <article>
-        </article>
-            <article>
+          <article id="main-article-2">
+            <div class ="main-article-content">
+              <div class="article-cat">
+                <span> Apps</span>
+              </div><!-- article-cat -->
+              <h2> This browser game takes you through the madness of founding your own startup</h2>
+              <div class="article-add-details">
+                <span> by <span class="author">Abhimanyu Ghoshal </span> </span>
+                <span clas="article-time">1 Hours ago</span>
+                <span class="article-share">47 /span>
+              </div> <!-- article-add-details -->
+            </div><!-- article-main-content -->
+          </article>
+            <article id="main-article-3">
+              <div class ="main-article-content">
+                <div class="article-cat">
+                  <span> apps</span>
+                </div><!-- article-cat -->
+                <h2> 7 ways to make sure someone doesn't steal your brilliant app idea</h2>
+                <div class="article-add-details">
+                  <span> by <span class="author">Mehul Rajput</span> </span>
+                  <span clas="article-time">1 Hours ago</span>
+                  <span class="article-share">181 /span>
+                </div> <!-- article-add-details -->
+              </div><!-- article-main-content -->
             </article>
           </div> <!-- main-col2 -->
       </main>
@@ -34,6 +179,7 @@
         <section class="latest-news">
           <ul>
             <li class="single-latest-news">
+              <h3><a href="#">Netwear Exploits found in 31 models lets hackers turn your router into botnet</a></h3>
             </li><!-- single-latest-news
               Remove the space between inline-block elements
             --><li class="single-latest-news">
@@ -187,4 +333,3 @@
     </div><!--container-fluid -->
   </body>
 </html>
-s

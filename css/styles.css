@@ -1,0 +1,825 @@
+/*Comments related to the content
+Color codes
+TNW logo gradient : linear-gradient(-45deg, #ff4422, #cd0295)
+site-nav font : #7F7F7F;
+site-nav background : #131313
+news-cat-nav font : #afacac
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Styling Starts here*/
+
+/*General styling*/
+nav a{
+	text-decoration: none;
+}
+
+body{
+	font-family: Shentox,sans-serif
+}
+
+.container-fluid
+{
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 100vh;
+}
+
+.navigation
+{
+	top: 0;
+	width: 100%;
+}
+
+main
+{
+	background-color: red; /*remove later*/
+	box-sizing: border-box;
+	margin-bottom: 100px;
+	/*Responsive element*/
+	height: 85vh;
+}
+
+.main-col1, .main-col2
+{
+	padding: 4px;
+	box-sizing: border-box;
+	/*Responsive element*/
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-col2
+{
+	/*responsive element*/
+	width: 33.3%;
+	background-color: orange; /*Remove later*/
+}
+
+.main-col1
+{
+	/*Responsive element*/
+	width: 66%;
+	background-color: yellow; /*Remove later */
+}
+
+.single-latest-news, .single-latest-funding, .single-latest-deal
+{
+	box-sizing: border-box;
+	background-color: blue; /*Remove later */
+	/*Responsive element*/
+	display: inline-block;
+	width: 288px;
+	padding: 10px;
+}
+
+/*.latest-news and .latest-funding have same styling till
+Screen size : ???? */
+.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+{
+	margin: 0 auto;
+	background-color: purple; /*Remove Later */
+	/*responsive element*/
+	widows: 1152px;
+}
+
+.tnw-conference
+{
+	padding: 35px 0;
+	background-color: red; /*Remove later*/
+}
+
+/*remove this later*/
+.latest-funding, .news-categories, .latest-deals
+{
+	margin-top: 20px;
+	background-color: purple; /*Remove later*/
+}
+
+.news-categories-col
+{
+	box-sizing: border-box;
+	width: 382px;
+	background-color: blue; /*Remove Later*/
+	/*Responsive elements*/
+	display: inline-block;
+	margin: 0;
+	padding: 12px;
+}
+
+
+.tnw-conf-header
+{
+	height: 25px;
+	background-color: yellow;/*remove later*/
+	/*responsive element*/
+	width: 433px;
+}
+
+.conf-rem-time
+{
+	box-sizing: border-box;
+	background-color: orange;/*remove later*/
+	/*Responsive element*/
+	width: 692px;
+	padding: 0 42px;
+	height: 151px;
+}
+
+.time-header
+{
+	display: inline-block;
+	/*Responsive element*/
+	width: 151px;
+	height: 21px;
+	background-color: green;/*remove later*/
+}
+
+.time-value
+{
+	display: inline-block;
+	/*Responsive element*/
+	width: 151px;
+	height: 93px;
+	background-color: pink; /*remove later*/
+}
+
+.conf-more
+{
+	/*Responsive element*/
+	width: 433px;
+	height: 126px;
+	background-color: blue;
+}
+
+.conf-header
+{
+	display: inline-block;
+	/*Responsive element*/
+	width: 151px;
+}
+
+.footer-wrapper, .wrapper
+{
+	padding: 0 20px;
+	text-align: center;
+}
+
+.time-wrapper
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-aside-nav
+{
+	padding: 35px 0;
+	text-align: left;
+	display: inline-block;
+	/*Responsive elements*/
+	width: 1152px;
+	height: 180px;
+}
+
+.footer-aside-nav-col
+{
+	/*Responsive element*/
+	width: 33%;
+	height: 100%;
+	display: inline-block;
+	background-color: purple; /*Reomove later*/
+
+}
+.footer-copyright
+{
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	background-color: black;
+	/*responsive element*/
+	padding: 39px 0;
+	height: 19px;
+}
+
+.footer-share-links
+{
+	text-align: center;
+	background-color: yellow;
+	font-size: 13px;
+	height: 91px;
+	background-color: pink; /*remove this later*/
+}
+
+/*Media Queries to handle the responsive design*/
+@media screen and (max-width: 1206px)
+{
+	.tnw-conf-header, .conf-more
+	{
+		width: 39vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 54vw;
+		 padding: 0;
+	 }
+
+	 .time-header, .time-value{
+		 width: 25%;
+	 }
+
+	 .footer-aside-nav
+	 {
+		 width: 100%;
+	 }
+
+	 .footer-aside-nav-col
+	 {
+		 width: 32.9%;
+	 }
+}
+
+@media screen and (max-width: 1206px) and (min-width: 1024px)
+{
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		width: 25%;
+	}
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	{
+		width: 100%;
+		text-align: left;
+	}
+	.news-categories-col
+	{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+	main
+	{
+		height: 60%;
+	}
+
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		padding: 10px;
+		width: 33.33%;
+	}
+
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	{
+		width: 100%;
+		text-align: left;
+	}
+	.news-categories-col
+	{
+		width: 49.5%;
+		padding: 10px;
+	}
+
+	.tnw-conf-header, .conf-more
+	{
+		width: 38vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 53vw;
+		 padding: 0;
+	 }
+
+}
+
+@media screen and (max-width: 767px){
+	main
+	{
+		height: 95vh;
+	}
+
+	.main-col1, .main-col2
+	{
+		display: block;
+		width: 100%;
+	}
+
+	.main-col1
+	{
+		height: 33%;
+	}
+
+	.main-col2 article
+	{
+		height: 33%;
+	}
+
+	.single-latest-news
+	{
+		width: 33%;
+	}
+
+	.latest-news{
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		padding: 0 0 0 88px;
+		width: 100%;
+		display: block;
+		height: 72px;
+		border-bottom: 1px solid black;
+	}
+
+	/*overwritting the padding and height for the latest funding thing*/
+	.single-latest-funding,
+	{
+		padding: 8px;
+		height: 225px;
+	}
+
+	.news-categories-col
+	{
+		width: 100%;
+		padding: 8px;
+	}
+
+	.footer-aside-nav-col
+	{
+		width: 49.3%;
+	}
+
+	.tnw-conf-header, .conf-more
+	{
+		width: 100vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 100vw;
+		 padding: 0;
+	 }
+}
+
+/*Styling the header*/
+/*Header logo*/
+.header-tnw-logo
+{
+	width: 66px;
+	height: 48px;
+	padding: 1px 20px;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	background: linear-gradient(-45deg, #ff4422, #cd0295); /* Standard syntax */
+}
+
+.site-nav
+{
+		background-color: #131313;
+		height: 32px;
+		box-sizing: border-box;
+		width: 100%;
+		padding-right: 10px;
+}
+
+.news-cat-nav
+{
+	box-sizing: border-box;
+	display: table;
+	padding-left: 8px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.inl-block-menu li
+{
+	display: inline-block;
+}
+
+.site-nav .inl-block-menu li
+{
+	margin-left: 12px;
+}
+
+.news-cat-nav .inl-block-menu li
+{
+	padding: 0 6px;
+}
+
+/* for vertical alignment*/
+.site-nav .inl-block-menu, .site-nav .inl-block-menu .r-float
+{
+	line-height: 32px;
+	vertical-align: middle;
+}
+
+.news-cat-nav .inl-block-menu, .news-cat-nav .inl-block-menu .r-float
+{
+	line-height: 48px;
+	vertical-align: middle;
+}
+
+.r-float
+{
+	float: right;
+}
+
+.site-nav .inl-block-menu a
+{
+	font-size: 13px;
+	color: #7F7F7F;
+}
+
+.site-nav .inl-block-menu a:hover
+{
+	color: #fff;
+}
+
+.news-cat-nav .inl-block-menu a:hover{
+	color: black;
+}
+
+.news-cat-nav .inl-block-menu a{
+	color: #afacac;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Old Standard TT', serif;
+}
+
+.inl-block-menu
+{
+	vertical-align: middle;
+	display: inline-block;;
+	width: 100%;
+}
+
+.nav-more, .nav-mail, .nav-twitter, .nav-facebook, .nav-twitter, .nav-search
+{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	opacity: 0.5;
+	width: 24px;
+	height: 48px;
+	vertical-align: top;
+}
+
+
+.nav-more:hover, .nav-mail:hover, .nav-twitter:hover, .nav-facebook:hover, .nav-twitter:hover, .nav-search:hover
+{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.nav-more
+{
+	background-image: url('img/more_item.png');
+}
+
+.nav-mail
+{
+	background-image: url('img/mail.png');
+}
+
+.nav-twitter
+{
+	background-image: url('img/twitter.png');
+}
+
+.nav-facebook
+{
+	background-image: url('img/facebook.png');
+}
+
+.nav-twitter
+{
+	background-image: url('img/twitter.png');
+}
+
+.nav-search
+{
+	width: 35px;
+	border-left: 1px solid #acafaf;
+	background-image: url('img/search_icon.png');
+}
+
+.news-cat-nav .inl-block-menu .r-float #alternate-menu-but
+{
+	padding: 14px 16px 16px;
+	width: 16px;
+	height: 18px;
+	border-left: 1px solid #acafaf;
+	vertical-align: top;
+	line-height: 2px;
+	display: none;
+}
+
+.news-cat-nav .inl-block-menu .r-float #alternate-menu-but span
+{
+	width: 100%;
+	height: 2px;
+	background-color: orange;
+	display: inline-block;
+}
+
+.funtional-icons, .inl-block-menu
+{
+	display: inline-block;
+}
+/*Related to Menu Adaptation based on the screen size*/
+li.show-more-button
+{
+	display: none;
+}
+
+.news-cat-nav .hide-item-769
+{
+	display: inline-block;
+}
+
+/*Media Queries for creating nice menu*/
+@media screen and (max-width: 1094px){
+	.news-cat-nav li.show-more-button{
+		display: inline-block;
+		opacity: 1;
+	}
+
+	.news-cat-nav li.hide-menu-item
+	{
+		display: none;
+	}
+}
+
+/*Remove some links from header as they are flowing to next line and breaking the layout*/
+@media screen and (max-width: 895px)
+{
+	.site-nav li.hide-item-895, .news-cat-nav li.hide-item-895
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 815px)
+{
+	.site-nav li.hide-item-815, .news-cat-nav li.hide-item-815
+	{
+		display: none;
+	}
+}
+
+/*Alternate mobile/tablet screen menu activate*/
+@media screen and (max-width: 769px)
+{
+	.site-nav
+	{
+		display: none;
+	}
+
+	.news-cat-nav .hide-item-769
+	{
+		display: none;
+	}
+
+	.news-cat-nav .inl-block-menu .r-float #alternate-menu-but
+	{
+		display: inline-block;
+	}
+
+	.news-cat-nav .header-tnw-logo
+	{
+		display: inline-block;
+	}
+}
+
+/*Alternate menu for mobile devices*/
+#alt-menu
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 657px;
+	background: linear-gradient(-45deg, #ff4422 20%, #cd0295); /* Standard syntax */
+}
+
+#alt-menu	.alt-menu-row
+{
+	padding: 0 16px;
+	vertical-align: middle;
+	height: 48px;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+	box-sizing: border-box;
+}
+
+#alt-menu .alt-menu-row ul
+{
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#alt-menu	.alt-menu-row li
+{
+	list-style-type: none;
+	display: inline-block;
+}
+#alt-menu .alt-menu-row:last-of-type
+{
+	border-bottom: none;
+	height: auto;
+}
+#alt-menu .alt-menu-row:last-of-type li
+{
+	display: block;
+}
+
+#alt-menu .alt-menu-row #close-alt-menu
+{
+	color: #fff;
+	height: 48px;
+	padding: 16px 0;
+	box-sizing: border-box;
+	vertical-align: top;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#alt-menu .alt-menu-row .share-icon
+{
+	padding: 16px 0 16px 30px;
+	width: 100%;
+}
+
+#alt-menu .alt-menu-row .share-icon li
+{
+	display: inline-block;
+	width: 9%;
+	height: 16px;
+}
+
+#alt-menu .alt-menu-row .share-icon li a
+{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: url('img/sprite.svg');
+	background-clip: content-box;
+}
+.mail-icon-menu{
+		background-position: -496px -496px;
+}
+
+.face-icon-menu{
+		background-position: -240px -240px;
+}
+
+.twit-icon-menu{
+		background-position: -928px -928px;
+}
+
+.goog-icon-menu{
+		background-position: -288px -288px;
+}
+
+.link-icon-menu{
+		background-position: -384px -384px;
+}
+
+.yout-icon-menu{
+		background-position: -1184px -1184px;
+}
+
+.pint-icon-menu{
+		background-position: -592px -592px;
+}
+
+.inst-icon-menu{
+		background-position: -336px -336px;
+}
+
+.wifi-icon-menu{
+		background-position: -736px -736px;
+}
+
+
+#alt-menu .alt-menu-row .share-icon li img
+{
+	vertical-align: middle;
+}
+
+#alt-menu .alt-menu-row .col-50
+{
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+#alt-menu .alt-menu-row .col-50 li a
+{
+	color: rgba(255,255,255,0.6);
+}
+
+#alt-menu .alt-menu-row .col-50 li.alt-menu-col-head
+{
+	color: #fff;
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#alt-menu .alt-menu-row:last-of-type li{
+	margin: 7px 0;
+	padding: 2px 0;
+	font-size: 14px;
+}
+
+/*Styling the main section */
+#main-article-1, #main-article-2, #main-article-3
+{
+	width: 100%;
+	height: 50%;
+}
+
+#main-article-1
+{
+	height: 100%;
+	background-image: url(img/main1.png);
+	background-size: 100% 100%;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+/*These classes are added using javascript at run time so placed at last*/
+.bring-inl-block
+{
+	display: inline-block;;
+}
+
+#bring-block
+{
+	display: block;
+}
+
+.fixed-news-nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-left: 112px;
+}
+
+.no-display
+{
+	display: none;
+}
