@@ -524,34 +524,34 @@ Screen size : ???? */
 
 .nav-more
 {
-	background-image: url('img/more_item.png');
+	background-image: url('../img/more_item.png');
 }
 
 .nav-mail
 {
-	background-image: url('img/mail.png');
+	background-image: url('../img/mail.png');
 }
 
 .nav-twitter
 {
-	background-image: url('img/twitter.png');
+	background-image: url('../img/twitter.png');
 }
 
 .nav-facebook
 {
-	background-image: url('img/facebook.png');
+	background-image: url('../img/facebook.png');
 }
 
 .nav-twitter
 {
-	background-image: url('img/twitter.png');
+	background-image: url('../img/twitter.png');
 }
 
 .nav-search
 {
 	width: 35px;
 	border-left: 1px solid #acafaf;
-	background-image: url('img/search_icon.png');
+	background-image: url('../img/search_icon.png');
 }
 
 .news-cat-nav .inl-block-menu .r-float #alternate-menu-but
@@ -712,7 +712,7 @@ li.show-more-button
 	height: 100%;
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: url('img/sprite.svg');
+	background-image: url('../img/sprite.svg');
 	background-clip: content-box;
 }
 .mail-icon-menu{
@@ -794,7 +794,7 @@ li.show-more-button
 #main-article-1
 {
 	height: 100%;
-	background-image: url(img/main1.png);
+	background-image: url('../img/main1.png');
 	background-size: 100% 100%;
 	background-position: top left;
 	background-repeat: no-repeat;
