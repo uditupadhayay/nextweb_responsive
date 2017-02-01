@@ -43,3 +43,30 @@
     </ul>
   </nav>
 </header>
+
+
+<!-- news-categories-col
+  Remove White space between inline block
+--><article class="news-categories-col">
+  <h3><a href="#"></a></h3>
+  <article class="most-popular">
+    <span class="article-cat">Most Popular</span><!-- article-cat -->
+    <h4><a href="#"></a></h4>
+    <div class="article-add-details">
+      <span class="author">Abhimanyu Ghoshal </span> <!-- author -->
+      <span clas="article-time">4 Hours ago</span> <!-- article-time -->
+    </div> <!-- article-add-details -->
+  </article><!-- most-populat -->
+  <article class="latest">
+    <span class="article-cat">Latest</span><!-- article-cat -->
+    <img src="" alt ="image1" width="96px" height="96px" />
+    <h4><a href="#"></a></h4>
+  </article><!-- latest -->
+  <ul>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+  </ul>
+</article><!--news-categories-col -->
