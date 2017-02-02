@@ -59,7 +59,7 @@ table {
 /*Styling Starts here*/
 
 /*General styling*/
-nav a{
+nav a, main a{
 	text-decoration: none;
 }
 
@@ -83,7 +83,6 @@ body{
 
 main
 {
-	background-color: red; /*remove later*/
 	box-sizing: border-box;
 	margin-bottom: 100px;
 	/*Responsive element*/
@@ -104,14 +103,12 @@ main
 {
 	/*responsive element*/
 	width: 33.3%;
-	background-color: orange; /*Remove later*/
 }
 
 .main-col1
 {
 	/*Responsive element*/
 	width: 66%;
-	background-color: yellow; /*Remove later */
 }
 
 .single-latest-news, .single-latest-funding, .single-latest-deal
@@ -261,156 +258,6 @@ Screen size : ???? */
 	background-color: pink; /*remove this later*/
 }
 
-/*Media Queries to handle the responsive design*/
-@media screen and (max-width: 1206px)
-{
-	.tnw-conf-header, .conf-more
-	{
-		width: 39vw;
-	}
-	 .conf-rem-time
-	 {
-		 width: 54vw;
-		 padding: 0;
-	 }
-
-	 .time-header, .time-value{
-		 width: 25%;
-	 }
-
-	 .footer-aside-nav
-	 {
-		 width: 100%;
-	 }
-
-	 .footer-aside-nav-col
-	 {
-		 width: 32.9%;
-	 }
-}
-
-@media screen and (max-width: 1206px) and (min-width: 1024px)
-{
-	.single-latest-news, .single-latest-funding, .single-latest-deal
-	{
-		width: 25%;
-	}
-	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
-	{
-		width: 100%;
-		text-align: left;
-	}
-	.news-categories-col
-	{
-		width: 33%;
-	}
-}
-
-@media screen and (max-width: 1024px) and (min-width: 768px){
-	main
-	{
-		height: 60%;
-	}
-
-	.single-latest-news, .single-latest-funding, .single-latest-deal
-	{
-		padding: 10px;
-		width: 33.33%;
-	}
-
-	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
-	{
-		width: 100%;
-		text-align: left;
-	}
-	.news-categories-col
-	{
-		width: 49.5%;
-		padding: 10px;
-	}
-
-	.tnw-conf-header, .conf-more
-	{
-		width: 38vw;
-	}
-	 .conf-rem-time
-	 {
-		 width: 53vw;
-		 padding: 0;
-	 }
-
-}
-
-@media screen and (max-width: 767px){
-	main
-	{
-		height: 95vh;
-	}
-
-	.main-col1, .main-col2
-	{
-		display: block;
-		width: 100%;
-	}
-
-	.main-col1
-	{
-		height: 33%;
-	}
-
-	.main-col2 article
-	{
-		height: 33%;
-	}
-
-	.single-latest-news
-	{
-		width: 33%;
-	}
-
-	.latest-news{
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.single-latest-news, .single-latest-funding, .single-latest-deal
-	{
-		padding: 0 0 0 88px;
-		width: 100%;
-		display: block;
-		height: 72px;
-		border-bottom: 1px solid black;
-	}
-
-	/*overwritting the padding and height for the latest funding thing*/
-	.single-latest-funding,
-	{
-		padding: 8px;
-		height: 225px;
-	}
-
-	.news-categories-col
-	{
-		width: 100%;
-		padding: 8px;
-	}
-
-	.footer-aside-nav-col
-	{
-		width: 49.3%;
-	}
-
-	.tnw-conf-header, .conf-more
-	{
-		width: 100vw;
-	}
-	 .conf-rem-time
-	 {
-		 width: 100vw;
-		 padding: 0;
-	 }
-}
-
 /*Styling the header*/
 /*Header logo*/
 .header-tnw-logo
@@ -441,6 +288,7 @@ Screen size : ???? */
 	padding-left: 8px;
 	width: 100%;
 	background-color: #fff;
+	z-index: 99;
 }
 
 .inl-block-menu li
@@ -588,60 +436,6 @@ li.show-more-button
 	display: inline-block;
 }
 
-/*Media Queries for creating nice menu*/
-@media screen and (max-width: 1094px){
-	.news-cat-nav li.show-more-button{
-		display: inline-block;
-		opacity: 1;
-	}
-
-	.news-cat-nav li.hide-menu-item
-	{
-		display: none;
-	}
-}
-
-/*Remove some links from header as they are flowing to next line and breaking the layout*/
-@media screen and (max-width: 895px)
-{
-	.site-nav li.hide-item-895, .news-cat-nav li.hide-item-895
-	{
-		display: none;
-	}
-}
-
-@media screen and (max-width: 815px)
-{
-	.site-nav li.hide-item-815, .news-cat-nav li.hide-item-815
-	{
-		display: none;
-	}
-}
-
-/*Alternate mobile/tablet screen menu activate*/
-@media screen and (max-width: 769px)
-{
-	.site-nav
-	{
-		display: none;
-	}
-
-	.news-cat-nav .hide-item-769
-	{
-		display: none;
-	}
-
-	.news-cat-nav .inl-block-menu .r-float #alternate-menu-but
-	{
-		display: inline-block;
-	}
-
-	.news-cat-nav .header-tnw-logo
-	{
-		display: inline-block;
-	}
-}
-
 /*Alternate menu for mobile devices*/
 #alt-menu
 {
@@ -785,21 +579,416 @@ li.show-more-button
 }
 
 /*Styling the main section */
+#main-article-1:hover, #main-article-2:hover, #main-article-3:hover
+{
+	cursor: pointer;
+}
+
 #main-article-1, #main-article-2, #main-article-3
 {
 	width: 100%;
 	height: 50%;
+	position: relative;
+	padding: 20px;
+	box-sizing: border-box;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#main-article-2
+{
+	margin-bottom: 4px;
 }
 
 #main-article-1
 {
 	height: 100%;
 	background-image: url('../img/main1.png');
-	background-size: 100% 100%;
-	background-position: top left;
-	background-repeat: no-repeat;
+	padding: 20px;
 }
 
+#main-article-2
+{
+	background-image: url('../img/main2.png');
+}
+
+#main-article-3
+{
+	background-image: url('../img/main3.png');
+}
+
+.main-article-content
+{
+	position: absolute;
+	bottom: 20px;
+	width: 95%;
+	box-sizing: border-box;
+}
+
+.main-article-content h3
+{
+	margin-bottom: 10px;
+}
+#main-article-1 .main-article-content h3
+{
+	margin-bottom: 20px;
+}
+
+.main-article-content h3 a
+{
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#main-article-1 .main-article-content h3 a
+{
+	font-size: 68px;
+}
+
+.article-cat
+{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+#main-article-1 .article-cat
+{
+	margin-bottom: 10px;
+}
+
+.main-article-content .article-add-details
+{
+	font-size: 12px;
+	color: #fff;
+}
+
+.article-time, .article-share
+{
+	padding-left: 20px;
+	margin-left: 10px;
+}
+
+.article-time, .article-share, .author
+{
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: bottom;
+	background-clip: content-box;
+}
+
+
+.article-time
+{
+	background: url('../img/sprite.svg') no-repeat -144px -144px;
+}
+
+.article-share{
+	background: url('../img/sprite.svg') no-repeat -832px -832px;
+}
+
+.author a
+{
+	color: #fff;
+}
+
+.black-gradient, .orange-gradient, .tnw-logo-article
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.black-gradient
+{
+	background: url('../img/black_gradient.png') no-repeat, rgba(0,0,0,0.25);
+	will-change: background-color;
+	background-size: 100% 100%;
+}
+
+.orange-gradient{
+	background: url('../img/orange_gradient.png') no-repeat;
+	background-size: 100% 100%;
+	mix-blend-mode: lighten;
+}
+
+.tnw-logo-article{
+	background: url('../img/tnw1.svg') no-repeat;
+	background-size: 50% 100% ;
+	width: 100%;
+	height: 112px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#main-article-1:hover .black-gradient
+{
+	background-color: rgba(0,0,0,0.1);
+}
+
+#main-article-1 .date-time
+{
+	float: right;
+	color: #fff;
+	font-size: 14px;
+	
+}
+
+/*Media Queries to handle the responsive design*/
+@media screen and (max-width: 1206px)
+{
+	.tnw-conf-header, .conf-more
+	{
+		width: 39vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 54vw;
+		 padding: 0;
+	 }
+
+	 .time-header, .time-value{
+		 width: 25%;
+	 }
+
+	 .footer-aside-nav
+	 {
+		 width: 100%;
+	 }
+
+	 .footer-aside-nav-col
+	 {
+		 width: 32.9%;
+	 }
+}
+
+@media screen and (max-width: 1206px) and (min-width: 1024px)
+{
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		width: 25%;
+	}
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	{
+		width: 100%;
+		text-align: left;
+	}
+	.news-categories-col
+	{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+	main
+	{
+		height: 60%;
+	}
+
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		padding: 10px;
+		width: 33.33%;
+	}
+
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	{
+		width: 100%;
+		text-align: left;
+	}
+	.news-categories-col
+	{
+		width: 49.5%;
+		padding: 10px;
+	}
+
+	.tnw-conf-header, .conf-more
+	{
+		width: 38vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 53vw;
+		 padding: 0;
+	 }
+
+	 #main-article-1 .main-article-content h3
+	 {
+	 	margin-bottom: 10px;
+	 }
+
+	 #main-article-1 .main-article-content h3 a
+	 {
+	 	font-size: 40px;
+	 }
+
+	 #main-article-1 .article-cat
+	 {
+		 margin-bottom: 5px;
+	 }
+
+	 #main-article-2 .main-article-content h3 a, #main-article-3 .main-article-content h3 a
+	 {
+		 font-size: 20px;
+	 }
+}
+
+@media screen and (max-width: 1024px){
+	.hide-1024-css
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#main-article-1 .main-article-content h3 a
+	{
+	 font-size: 20px;
+	}
+
+	main
+	{
+		height: 95vh;
+	}
+
+	.main-col1, .main-col2
+	{
+		display: block;
+		width: 100%;
+	}
+
+	.main-col1
+	{
+		height: 33%;
+	}
+
+	#main-article-2, #main-article-3
+	{
+		height: 33%;
+	}
+
+	.main-col2
+	{
+		padding-top: 0;
+	}
+
+	.single-latest-news
+	{
+		width: 33%;
+	}
+
+	.latest-news{
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.single-latest-news, .single-latest-funding, .single-latest-deal
+	{
+		padding: 0 0 0 88px;
+		width: 100%;
+		display: block;
+		height: 72px;
+		border-bottom: 1px solid black;
+	}
+
+	/*overwritting the padding and height for the latest funding thing*/
+	.single-latest-funding,
+	{
+		padding: 8px;
+		height: 225px;
+	}
+
+	.news-categories-col
+	{
+		width: 100%;
+		padding: 8px;
+	}
+
+	.footer-aside-nav-col
+	{
+		width: 49.3%;
+	}
+
+	.tnw-conf-header, .conf-more
+	{
+		width: 100vw;
+	}
+	 .conf-rem-time
+	 {
+		 width: 100vw;
+		 padding: 0;
+	 }
+}
+
+
+/*Media Queries for creating nice menu*/
+@media screen and (max-width: 1094px){
+	.news-cat-nav li.show-more-button{
+		display: inline-block;
+		opacity: 1;
+	}
+
+	.news-cat-nav li.hide-menu-item
+	{
+		display: none;
+	}
+}
+
+/*Remove some links from header as they are flowing to next line and breaking the layout*/
+@media screen and (max-width: 895px)
+{
+	.site-nav li.hide-item-895, .news-cat-nav li.hide-item-895
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 815px)
+{
+	.site-nav li.hide-item-815, .news-cat-nav li.hide-item-815
+	{
+		display: none;
+	}
+}
+
+/*Alternate mobile/tablet screen menu activate*/
+@media screen and (max-width: 769px)
+{
+	.site-nav
+	{
+		display: none;
+	}
+
+	.news-cat-nav .hide-item-769
+	{
+		display: none;
+	}
+
+	.news-cat-nav .inl-block-menu .r-float #alternate-menu-but
+	{
+		display: inline-block;
+	}
+
+	.news-cat-nav .header-tnw-logo
+	{
+		display: inline-block;
+	}
+}
+
+
+/*For hiding the headers given for the document outline*/
+.hide {
+   position: absolute !important;
+   top: -99999px !important;
+   left: -99999px !important;
+}
 /*These classes are added using javascript at run time so placed at last*/
 .bring-inl-block
 {

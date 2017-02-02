@@ -13,10 +13,10 @@
   <body>
     <!-- moved the initial content to the temp. Decided to do the Layout first -->
     <div class = "container-fluid">
-      <h1> The next web </h1>
+      <h1 class="hide"> The next web </h1>
       <header class="navigation">
         <nav class = "site-nav">
-          <h2> Site Navigation </h2>
+          <h2 class="hide"> Site Navigation </h2>
           <ul class = "inl-block-menu">
             <li> <a href="#">News</a> </li>
             <li> <a href="#">Conference</a> </li>
@@ -37,7 +37,7 @@
         </nav> <!-- site-nav -->
 
         <nav class="news-cat-nav">
-          <h2> News Categories</h2>
+          <h2 class="hide"> News Categories</h2>
           <div  class = "header-tnw-logo" >
             <img src = "img/tnw.svg" width ="66px" height="48px" atl="tnw-logo"/>
           </div>
@@ -74,7 +74,7 @@
         </nav> <!-- news-cat-nav -->
 
         <nav id="alt-menu" class="no-display container-fluid">
-          <h2> Mobile Menu</h2>
+          <h2 class="hide"> Mobile Menu</h2>
           <div class="alt-menu-row">
             <span class="r-float" id="close-alt-menu">X</span>
           </div> <!-- alt-menu-row -->
@@ -131,21 +131,24 @@
       </header>
 
       <main>
-        <h2> Trending/Hot Tech,Web and startup News </h2>
+        <h2 class="hide"> Trending/Hot Tech,Web and startup News </h2>
         <div class="main-col1">
           <article id="main-article-1">
+            <div class="black-gradient"></div> <!-- black-gradient -->
+            <div class="tnw-logo-article hide-1024-css"></div><!-- tnw-logo-article -->
+            <div class="orange-gradient"></div><!--ornage-gradient -->
+            <div class="article-tnw-logo"> </div> <!-- article-tnw-logo -->
             <div class="date-time">
-              <div class="article-tnw-logo"> </div> <!-- article-tnw-logo -->
               <time datetime="2017-01-31"> Tuesday - January 31, 2017</time>
             </div> <!-- date-time -->
             <div class ="main-article-content">
               <div class="article-cat">
                 <span> insights</span>
               </div><!-- article-cat -->
-              <h3> Twitter's abuse problem can not be fixed till we fix ourselves</h3>
+              <h3><a href="#">Twitter's abuse problem can not be fixed till we fix ourselves</a></h3>
               <div class="article-add-details">
-                <span> by <span class="author">Abhimanyu Ghoshal </span> </span>
-                <span clas="article-time">2 Hours ago</span>
+                <span> by <span class="author"><a href="#">Abhimanyu Ghoshal</a></span> </span>
+                <span class="article-time">2 Hours ago</span>
                 <span class="article-share">247 </span>
               </div> <!-- article-add-details -->
             </div><!-- article-main-content -->
@@ -157,10 +160,10 @@
               <div class="article-cat">
                 <span> Apps</span>
               </div><!-- article-cat -->
-              <h3> This browser game takes you through the madness of founding your own startup</h3>
+              <h3><a href="#">This browser game takes you through the madness of founding your own startup</a></h3>
               <div class="article-add-details">
-                <span> by <span class="author">Abhimanyu Ghoshal </span> </span>
-                <span clas="article-time">1 Hours ago</span>
+                <span> by <span class="author"><a href="#">Abhimanyu Ghoshal</a></span> </span>
+                <span class="article-time">1 Hours ago</span>
                 <span class="article-share">47 </span>
               </div> <!-- article-add-details -->
             </div><!-- article-main-content -->
@@ -170,10 +173,10 @@
                 <div class="article-cat">
                   <span> apps</span>
                 </div><!-- article-cat -->
-                <h3> 7 ways to make sure someone doesn't steal your brilliant app idea</h3>
+                <h3><a href="#">7 ways to make sure someone doesn't steal your brilliant app idea</a></h3>
                 <div class="article-add-details">
-                  <span> by <span class="author">Mehul Rajput</span> </span>
-                  <span clas="article-time">1 Hours ago</span>
+                  <span> by <span class="author"><a href="#">Mehul Rajput</a></span> </span>
+                  <span class="article-time">1 Hours ago</span>
                   <span class="article-share">181 </span>
                 </div> <!-- article-add-details -->
               </div><!-- article-main-content -->
