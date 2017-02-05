@@ -64,13 +64,15 @@ nav a, main a{
 }
 
 body{
-	font-family: Shentox,sans-serif
+	font-family: Shentox,sans-serif;
+	overflow-x: hidden;
 }
 
 .container-fluid
 {
 	width: 100%;
 	display: block;
+	box-sizing: border-box;
 	position: relative;
 	height: 100vh;
 }
@@ -121,14 +123,11 @@ main
 	padding: 10px;
 }
 
-/*.latest-news and .latest-funding have same styling till
-Screen size : ???? */
 .latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
 {
 	margin: 0 auto;
-	background-color: purple; /*Remove Later */
 	/*responsive element*/
-	widows: 1152px;
+	width: 1152px;
 }
 
 .tnw-conference
@@ -584,6 +583,12 @@ li.show-more-button
 	cursor: pointer;
 }
 
+#main-article-1 a:hover, #main-article-2 a:hover, #main-article-3 a:hover
+{
+	text-decoration: underline;
+}
+
+
 #main-article-1, #main-article-2, #main-article-3
 {
 	width: 100%;
@@ -672,7 +677,7 @@ li.show-more-button
 	margin-left: 10px;
 }
 
-.article-time, .article-share, .author
+.article-time, .article-share, .author, .article-add-details
 {
 	display: inline-block;
 	height: 16px;
@@ -680,7 +685,6 @@ li.show-more-button
 	vertical-align: bottom;
 	background-clip: content-box;
 }
-
 
 .article-time
 {
@@ -738,9 +742,267 @@ li.show-more-button
 	float: right;
 	color: #fff;
 	font-size: 14px;
-	
+
 }
 
+/*Styling the latest-news*/
+
+.latest-news h2
+{
+	margin-bottom: 15px;
+}
+.latest-news h2 a
+{
+	font-size: 28px;
+	color: rgb(255,68,34);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.latest-news h2 a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+.single-latest-news
+{
+	height: 22vw;
+	min-height: 265px;
+}
+
+.latest-news ul li
+{
+	vertical-align: top;
+	text-align: left;
+}
+
+.latest-news ul li h3
+{
+	margin-top: 10px;
+	text-align: justify;
+}
+
+.latest-news ul h3 a{
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.latest-news ul h3 a:hover{
+	text-decoration: underline;
+	color: rgb(255, 68, 34);
+}
+
+.latest-news .single-latest-news a.author, .latest-news .single-latest-news  .article-add-details
+{
+	font-size: 13px;
+	color: rgb(170,170,170);
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.latest-news .single-latest-news a.author:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.latest-news ul.article-add-details:hover
+{
+	cursor: text;
+}
+
+.back-img:hover{
+	cursor: pointer;
+}
+
+.latest-news1 .back-img, .latest-news2 .back-img, .latest-news3 .back-img, .latest-news4 .back-img,
+.latest-news5 .back-img, .latest-news6 .back-img, .latest-news7 .back-img, .latest-news8 .back-img
+{
+	width: 100%;
+	height: 60%;
+	background-color: black;
+	background-position: top left;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+}
+
+.latest-news1 .back-img{
+	background-image: url('../img/latest_news1.png');
+}
+
+.latest-news2 .back-img{
+	background-image: url('../img/latest_news2.png');
+}
+
+.latest-news3 .back-img{
+	background-image: url('../img/latest_news8.png');
+}
+
+.latest-news4 .back-img{
+	background-image: url('../img/latest_news4.png');
+}
+
+.latest-news5 .back-img{
+	background-image: url('../img/latest_news5.png');
+}
+
+.latest-news6 .back-img{
+	background-image: url('../img/latest_news6.png');
+}
+
+.latest-news7 .back-img{
+	background-image: url('../img/latest_news7.png');
+}
+
+.latest-news8 .back-img{
+	background-image: url('../img/latest_news8.png');
+}
+
+/*Styling the lates funding*/
+.latest-funding h2
+{
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.latest-funding h2 a, .add-user-action a
+{
+	font-size: 28px;
+	color: rgb(255,68,34);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.latest-funding h2 a:hover, .add-user-action a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+.latest-funding ul li{
+	text-align: left;
+	vertical-align: top;
+}
+
+.add-user-action
+{
+	float: right;
+	margin-bottom: 15px;
+}
+
+.single-latest-funding .funder-info, .single-latest-funding p{
+	background-color: #FFFAF8;
+	padding: 10px 0 10px 10px;
+}
+
+.single-latest-funding .funder-info .industry, .single-latest-funding .funder-info .funder
+{
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.single-latest-funding .funder-info .industry
+{
+	background-image: url('../img/tag.png');
+}
+
+.single-latest-funding .funder-info .funder
+{
+	background-image: url('../img/suit.png');
+}
+
+.single-latest-funding .funder-info a
+{
+	color: #000;
+	opacity: 0.5;
+	display: inline-block;
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+.single-latest-funding .funder-info a:hover
+{
+	opacity: 1;
+}
+
+.single-latest-funding .funder-info
+{
+	border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+}
+/*overwritting the font size and creating a border left*/
+.add-user-action a
+{
+font-size: 18px;
+padding-right: 10px;
+border-right: 1px solid rgb(255,68,34);
+line-height: 28px;
+vertical-align: middle;
+}
+
+.add-user-action a:last-of-type
+{
+	padding-right: 0;
+	border-right: none;
+}
+
+.single-latest-funding
+{
+	position: relative;
+}
+
+.single-latest-funding h3
+{
+	height: 22px;
+	padding: 12px 0 15px 84px;
+	background-color: rgb(255,68,34);
+	color: #fff;
+	font-size: 18px;
+}
+
+.single-latest-funding > img
+{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.funding-info
+{
+	padding: 10px 0 10px 84px;
+	background-color: #FFEBE7;
+}
+
+.funding-amount
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.funding-series
+{
+	font-size: 12px;
+	opacity: 0.5;
+}
+
+.single-latest-funding p a
+{
+	color: #000;
+	opacity: 0.7;
+	font-size: 12px;
+	line-height: 1.3em;
+	text-decoration: none;
+}
+
+.single-latest-funding p a .news-source
+{
+	opacity: 0.5;
+}
 /*Media Queries to handle the responsive design*/
 @media screen and (max-width: 1206px)
 {
@@ -774,12 +1036,14 @@ li.show-more-button
 	.single-latest-news, .single-latest-funding, .single-latest-deal
 	{
 		width: 25%;
+		height: 22vw;
 	}
 	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
 	{
 		width: 100%;
 		text-align: left;
 	}
+
 	.news-categories-col
 	{
 		width: 33%;
@@ -798,6 +1062,22 @@ li.show-more-button
 		width: 33.33%;
 	}
 
+	.single-latest-funding:last-of-type
+	{
+		display: none;
+	}
+
+	.add-user-action
+	{
+		float: none;
+	}
+
+	.single-latest-news
+	{
+		min-height: 210px;
+		text-align: left;
+	}
+
 	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
 	{
 		width: 100%;
@@ -807,6 +1087,10 @@ li.show-more-button
 	{
 		width: 49.5%;
 		padding: 10px;
+	}
+
+	.latest-news ul h3 a{
+		font-size: 14px;
 	}
 
 	.tnw-conf-header, .conf-more
@@ -848,6 +1132,22 @@ li.show-more-button
 }
 
 @media screen and (max-width: 767px){
+
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	{
+		width: 100%;
+		text-align: left;
+	}
+
+	.add-user-action
+	{
+		float: none;
+	}
+	.add-user-action a
+	{
+		display: block;
+		border-right: none;
+	}
 	#main-article-1 .main-article-content h3 a
 	{
 	 font-size: 20px;
@@ -879,23 +1179,53 @@ li.show-more-button
 		padding-top: 0;
 	}
 
-	.single-latest-news
-	{
-		width: 33%;
-	}
-
 	.latest-news{
 		width: 100%;
 		box-sizing: border-box;
 	}
 
-	.single-latest-news, .single-latest-funding, .single-latest-deal
+	.single-latest-news, .single-latest-deal
 	{
-		padding: 0 0 0 88px;
 		width: 100%;
 		display: block;
-		height: 72px;
+		height: auto;
 		border-bottom: 1px solid black;
+	}
+
+	.single-latest-news
+	{
+		width: 100%;
+		padding: 0;
+		height: 72px;
+		min-height: auto;
+		display: block;
+		border-bottom: 1px solid black;
+	}
+
+	.single-latest-news .back-img
+	{
+		width: 72px;
+		height: 72px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.latest-news .single-latest-news  .article-add-details
+	{
+		margin-top: 0;
+	}
+
+	.single-latest-funding
+	{
+		height: auto;
+		padding: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.single-latest-funding > img{
+		top: 8px;
+		left: 8px;
 	}
 
 	/*overwritting the padding and height for the latest funding thing*/
