@@ -116,31 +116,27 @@ main
 .single-latest-news, .single-latest-funding, .single-latest-deal
 {
 	box-sizing: border-box;
-	background-color: blue; /*Remove later */
 	/*Responsive element*/
 	display: inline-block;
 	width: 288px;
 	padding: 10px;
 }
 
-.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+.latest-news, .latest-funding, .news-categories, .latest-deals, .dialogue
 {
 	margin: 0 auto;
 	/*responsive element*/
 	width: 1152px;
 }
 
-.tnw-conference
+.dialogue
 {
 	padding: 35px 0;
-	background-color: red; /*Remove later*/
 }
 
-/*remove this later*/
 .latest-funding, .news-categories, .latest-deals
 {
 	margin-top: 20px;
-	background-color: purple; /*Remove later*/
 }
 
 .news-categories-col
@@ -149,63 +145,10 @@ main
 	width: 382px;
 	vertical-align: top;
 	text-align: left;
-	background-color: blue; /*Remove Later*/
 	/*Responsive elements*/
 	display: inline-block;
 	margin: 0;
 	padding: 12px;
-}
-
-
-.tnw-conf-header
-{
-	height: 25px;
-	background-color: yellow;/*remove later*/
-	/*responsive element*/
-	width: 433px;
-}
-
-.conf-rem-time
-{
-	box-sizing: border-box;
-	background-color: orange;/*remove later*/
-	/*Responsive element*/
-	width: 692px;
-	padding: 0 42px;
-	height: 151px;
-}
-
-.time-header
-{
-	display: inline-block;
-	/*Responsive element*/
-	width: 151px;
-	height: 21px;
-	background-color: green;/*remove later*/
-}
-
-.time-value
-{
-	display: inline-block;
-	/*Responsive element*/
-	width: 151px;
-	height: 93px;
-	background-color: pink; /*remove later*/
-}
-
-.conf-more
-{
-	/*Responsive element*/
-	width: 433px;
-	height: 126px;
-	background-color: blue;
-}
-
-.conf-header
-{
-	display: inline-block;
-	/*Responsive element*/
-	width: 151px;
 }
 
 .footer-wrapper, .wrapper
@@ -214,10 +157,9 @@ main
 	text-align: center;
 }
 
-.time-wrapper
+.footer-wrapper
 {
-	display: inline-block;
-	vertical-align: top;
+		background-color: #131313;
 }
 
 .footer-aside-nav
@@ -236,7 +178,6 @@ main
 	width: 33%;
 	height: 100%;
 	display: inline-block;
-	background-color: purple; /*Reomove later*/
 
 }
 .footer-copyright
@@ -253,10 +194,11 @@ main
 .footer-share-links
 {
 	text-align: center;
-	background-color: yellow;
-	font-size: 13px;
-	height: 91px;
-	background-color: pink; /*remove this later*/
+	vertical-align: baseline;
+	height: 120px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	background-color:#131313;
 }
 
 /*Styling the header*/
@@ -1306,23 +1248,124 @@ vertical-align: middle;
 	font-size: 16px;
 	color: #000;
 }
+
+/*Styling footer */
+.footer-copyright .copyright-content
+{
+	opacity: 0.7;
+}
+
+.footer-share-links ul.footer-share-icons li
+{
+	background-color: #333;
+	border-radius: 50%;
+	border: 1px solid #333;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.footer-share-links ul.footer-share-icons li:hover
+{
+	background-color: #131313;
+	cursor: pointer;
+}
+.footer-share-links ul.footer-share-icons li a
+{
+	width: 16px;
+	height: 16px;
+	padding: 12px;
+	padding: 12px;
+	background-image: url('../img/sprite.svg');
+	display: inline-block;
+	background-origin: content-box;
+	background-clip: content-box;
+}
+
+.footer-share-links .share-facebook
+{
+	background-position: -240px -240px;
+}
+
+.footer-share-links  .share-twitter
+{
+	background-position: -928px -928px;
+}
+
+.footer-share-links  .share-youtube
+{
+	background-position: -1184px -1184px;
+}
+
+.footer-share-links  .share-instagram
+{
+	background-position: -336px -336px;
+}
+
+.footer-share-links  .share-pinterest
+{
+	background-position: -592px -592px;
+}
+
+.footer-share-links  .share-wifi
+{
+	background-position: -736px -736px;
+}
+
+.footer-share-links .share-mail
+{
+	background-position: -496px -496px;
+}
+
+.footer-share-links .site-links li
+{
+	margin-top: 10px;
+	margin-right: 15px;
+	display: inline-block;
+}
+.footer-share-links .site-links a
+{
+	color: #fff;
+	opacity: 0.7;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.footer-share-links .site-links a:hover
+{
+	opacity: 1;
+}
+.footer-aside-nav .footer-aside-nav-col
+{
+	vertical-align: top;
+}
+
+.footer-aside-nav .footer-aside-nav-col ul li
+{
+	margin-bottom: 10px;
+}
+.footer-aside-nav .footer-aside-nav-col ul li a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.footer-aside-nav .footer-aside-nav-col ul li time.event-date{
+	color: #fff;
+	opacity: 0.3;
+}
+
+.footer-aside-nav .footer-aside-nav-col ul li.col-title
+{
+	color: #fff;
+	opacity: 0.6;
+	margin-bottom: 20px;
+}
 /*Media Queries to handle the responsive design*/
 @media screen and (max-width: 1206px)
 {
-	.tnw-conf-header, .conf-more
-	{
-		width: 39vw;
-	}
-	 .conf-rem-time
-	 {
-		 width: 54vw;
-		 padding: 0;
-	 }
-
-	 .time-header, .time-value{
-		 width: 25%;
-	 }
-
 	 .footer-aside-nav
 	 {
 		 width: 100%;
@@ -1346,7 +1389,7 @@ vertical-align: middle;
 		width: 25%;
 		height: 22vw;
 	}
-	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	.latest-news, .latest-funding, .news-categories, .latest-deals
 	{
 		width: 100%;
 		text-align: left;
@@ -1386,7 +1429,7 @@ vertical-align: middle;
 		text-align: left;
 	}
 
-	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .dialogue
 	{
 		width: 100%;
 		text-align: left;
@@ -1400,16 +1443,6 @@ vertical-align: middle;
 	.latest-news ul h3 a{
 		font-size: 14px;
 	}
-
-	.tnw-conf-header, .conf-more
-	{
-		width: 38vw;
-	}
-	 .conf-rem-time
-	 {
-		 width: 53vw;
-		 padding: 0;
-	 }
 
 	 #main-article-1 .main-article-content h3
 	 {
@@ -1459,7 +1492,7 @@ vertical-align: middle;
 		position: relative;
 	}
 
-	.latest-news, .latest-funding, .news-categories, .latest-deals, .tnw-conference
+	.latest-news, .latest-funding, .news-categories, .latest-deals, .dialogue
 	{
 		width: 100%;
 		text-align: left;
@@ -1573,14 +1606,9 @@ vertical-align: middle;
 		width: 49.3%;
 	}
 
-	.tnw-conf-header, .conf-more
-	{
-		width: 100vw;
-	}
-	 .conf-rem-time
+	 .footer-aside-nav
 	 {
-		 width: 100vw;
-		 padding: 0;
+		 height: auto;
 	 }
 }
 
